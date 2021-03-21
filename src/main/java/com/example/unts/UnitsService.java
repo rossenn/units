@@ -19,7 +19,7 @@ public class UnitsService {
         this.definitions = definitions;
     }
 
-    public Response getSI(String nonSiUnit) {
+    public Response convertUnits(String nonSiUnit) {
         return new Response(getSiUnit(nonSiUnit), getMultiplicationFactor(nonSiUnit));
     }
 

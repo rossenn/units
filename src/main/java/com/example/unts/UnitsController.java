@@ -15,7 +15,7 @@ public class UnitsController {
     }
 
     @GetMapping("/units/si")
-    public ResponseEntity<Response> getSI(@RequestParam String unit) {
-        return ResponseEntity.ok().body(unitsService.getSI(unit));
+    public ResponseEntity<Response> convertUnits(@RequestParam String unit) {
+        return ResponseEntity.ok().body(unitsService.convertUnits(unit));
     }
 }
