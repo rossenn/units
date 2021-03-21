@@ -1,14 +1,20 @@
 # units
 ___
-### To run the Dockerized application (Docker has to be installed for this step):
+### To run the Dockerized application (it is already pushed to Docker Hub):
 
     > docker run -p 8080:8080 rossen12/units 
 
-### To run the application without Docker (Maven and JDK 11 have to be installed for this step), from the `units` directory:
+### To build the Docker container, from the project directory:
 
-    > mvn clean package
+    units> mvn clean package
 
-    > java -jar target/units-0.0.1-SNAPSHOT.jar
+    units> docker build -t rossen12/units . 
+
+### To run the application without Docker, from the project directory:
+
+    units> mvn clean package
+
+    units> java -jar target/units-0.0.1-SNAPSHOT.jar
 
 ### To test the running application hit the following URLs:
 
