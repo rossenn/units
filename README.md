@@ -18,10 +18,10 @@ ___
 
 ### To test the running application hit the following URLs:
 
-+ http://localhost:8080/units/si?unit=degree
++ http://localhost:8080/units/si?units=degree
 
-+ http://localhost:8080/units/si?unit=degree/minute
++ http://localhost:8080/units/si?units=degree/minute
 
-+ http://localhost:8080/units/si?unit=(degree/(minute*hectare))
++ http://localhost:8080/units/si?units=(degree/(minute*hectare))
 
-+ http://localhost:8080/units/si?unit=ha*°
++ http://localhost:8080/units/si?units=ha*°
